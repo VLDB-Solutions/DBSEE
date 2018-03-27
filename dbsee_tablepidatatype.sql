@@ -8,10 +8,7 @@
 /* 1 - export target table to CSV                                    */
 /*********************************************************************/
 
--- export location set by controlling shell
-
--- identify datatypes per column name of PI, count of tables it's PI in, and their cumulative size
--- summed to column name level, making no guesses as to which type is preferred
+-- export location defined by controlling shell
 
 .set recordmode off
 .set separator '|'
