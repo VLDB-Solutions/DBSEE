@@ -8,7 +8,7 @@
 /* 1 - Export contents of the target table to CSV                    */
 /*********************************************************************/
 
--- export location defined by a controlling shell
+-- export location defined by controlling shell
 
 .set recordmode off
 .set separator '|'
