@@ -1,4 +1,4 @@
-/*********************************************************************/
+e/*********************************************************************/
 /* Author      : VLDB                                                */
 /* Date        : 07/02/2017                                          */
 /* Version     : 1                                                   */
@@ -8,7 +8,7 @@
 /* 1 - export target table to CSV                                    */
 /*********************************************************************/
 
--- export location now set in controlling shell
+-- export location defined by controlling shell
 
 .set recordmode off
 .set separator '|'
