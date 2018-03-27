@@ -8,7 +8,7 @@
 /* 1 - export target table to CSV                                    */
 /*********************************************************************/
 
--- export location now set by controlling shell
+-- export file defined by controlling shell
 
 .set recordmode off
 .set separator '|'
@@ -27,8 +27,8 @@ select t1.databasename       as database_name
 from   dbc.tables   t1
 inner join 
       (select databasename
-      	     ,tablename
-      	     ,sum(currentperm) as total_perm
+                 ,tablename
+                 ,sum(currentperm) as total_perm
        from   dbc.tablesizev
        group by 1,2) t2
 on     t1.databasename = t2.databasename
