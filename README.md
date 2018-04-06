@@ -1,3 +1,11 @@
+![logo](https://vldbsolutions.com/img/VLDB-logo.png)
+
+### Introduction
+
+**VLDB Solutions** are an independent data consultancy based in the UK. We provide expert [Professional Services](https://vldbsolutions.com/services/services.php) to clients and companies across all sectors of business, from finance and leisure, to retail and telecommunications. Our hard-earned, industry-recognised knowledge, accrued over decades of working on data projects, enables us to provide the solution to any [Big Data](https://vldbsolutions.com/glossary.php#bigdata) problem.
+
+Our main area of expertise is high-end, [Massively Parallel Processing (MPP)](https://vldbsolutions.com/glossary.php#mpp) database platforms, especially [Teradata](https://vldbsolutions.com/technology/teradata.php) and [Pivotal Greenplum](https://vldbsolutions.com/technology/greenplum.php). However, our project history includes business functions as diverse as [CRM](https://vldbsolutions.com/glossary.php#crm), [analytics](https://vldbsolutions.com/glossary.php#dataanalytics), customer retention, and financial planning and forecasting — as well as delivering tailored, hands-on technical [training](https://vldbsolutions.com/services/teradata-services/teradata-training.php) — for clients from the UK, Europe, and the USA.
+
 # DBSEE
 
 
