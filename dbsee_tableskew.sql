@@ -2,20 +2,8 @@
 /* Author      : VLDB                                                */
 /* Date        : 07/02/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate CSV to report on table skew on all tables  */
-/*               in the Teradata system                              */
+/* Description : Generate report on skewed tables                    */
 /*********************************************************************/
-/* 1 - export contents of table as a CSV                             */
-/*********************************************************************/
-
--- export location defined by controlling shell
-
-.set recordmode off
-.set separator '|'
-.set width 2000
-.set titledashes off
-.set null as ' '
-
 select  t1.databasename as database_name
        ,t1.tablename    as table_name
        ,t1.currentperm  as current_perm 
@@ -38,8 +26,4 @@ on      t1.tablename    = t2.tablename
 and     t1.databasename = t2.databasename
 group by 1,2,3,4,6
 ;
-.if errorcode <> 0 then .quit errorcode
-
-.logoff
-.exit
 
