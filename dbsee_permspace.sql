@@ -2,8 +2,8 @@
 /* Author      : VLDB                                                */
 /* Date        : 07/02/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate a CSV reporting on available space within  */
-/*               each database on the Teradata System                */
+/* Description : Generate report on available space within           */
+/*               each database                                       */
 /*********************************************************************/
 select  t1.databasename  as database_name
        ,sum(maxperm)     as perm_size
