@@ -3,7 +3,7 @@
 /* Date        : 07/02/2017                                          */
 /* Version     : 1                                                   */
 /* Description : Generate report on tables with 5 or more            */
-/*               columns as the primary index                        */
+/*               primary index (PI) columns                          */
 /*********************************************************************/
 select t1.databasename        as database_name
       ,t1.tablename           as table_name
