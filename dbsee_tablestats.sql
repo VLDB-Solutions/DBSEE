@@ -2,20 +2,9 @@
 /* Author      : VLDB                                                */
 /* Date        : 07/02/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate CSV to report on tables with missing or    */
-/*               out of date stats within the Teradata System        */
+/* Description : Generate report on tables with missing or           */
+/*               old statistics                                      */
 /*********************************************************************/
-/* 1 - export target table to CSV                                    */
-/*********************************************************************/
-
--- export location defined by controlling shell
-
-.set recordmode off
-.set separator '|'
-.set width 2000
-.set titledashes off
-.set null as ''
-
 select  t1.databasename    as database_name
        ,t1.tablename       as table_name
        ,max(t2.lastcollecttimestamp) as last_collect_timestamp
@@ -40,8 +29,4 @@ and     t1.tablename    = t3.tablename
 where   t2.expressioncount is null
 group by 1,2,5,6
 ;
-.if errorcode <> 0 then .quit errorcode
-
-.logoff
-.exit
 
