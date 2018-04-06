@@ -2,20 +2,8 @@
 /* Author      : VLDB                                                */
 /* Date        : 16/03/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate CSV to report on the datatype of primary   */
-/*               indexes within the Teradata System                  */
+/* Description : Generate report on primary index (PI) datatypes     */
 /*********************************************************************/
-/* 1 - export target table to CSV                                    */
-/*********************************************************************/
-
--- export location defined by controlling shell
-
-.set recordmode off
-.set separator '|'
-.set width 2000
-.set titledashes off
-.set null as ''
-
 select  t1.columnname as column_name
        ,t1.columntype as column_type
        ,case when t1.columntype = 'I'  then 'integer'
@@ -64,8 +52,4 @@ on      t1.columnname  = t4.columnname
 where   t2.indexnumber = 1
 group by 1,2,3
 ;
-.if errorcode <> 0 then .quit errorcode
-
-.logoff
-.exit
 
