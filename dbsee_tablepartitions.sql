@@ -2,20 +2,9 @@
 /* Author      : VLDB                                                */
 /* Date        : 07/02/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate CSV to report on table statistics on       */
-/*               partitioned tables in the Teradata system           */
+/* Description : Generate report on statistics for                   */
+/*               partitioned tables                                  */
 /*********************************************************************/
-/* 1 - export contents of table as a CSV                             */
-/*********************************************************************/
-
--- export location defined by controlling shell
-
-.set recordmode off
-.set separator '|'
-.set width 2000
-.set titledashes off
-.set null as ''
-
 select  t1.databasename     as database_name
        ,t1.tablename        as table_name
        ,t2.total_perm       as total_perm 
@@ -50,8 +39,4 @@ and     t4.columnname   = t5.columnname
 group by 1,2,3,4,6
 where   t4.partitioningcolumn = 'Y'
 ;
-.if errorcode <> 0 then .quit errorcode
-
-.logoff
-.exit
 
