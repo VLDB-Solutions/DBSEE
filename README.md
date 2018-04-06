@@ -1,29 +1,29 @@
 # DBSEE
 
 
-dbsee_permspace_export.sql -- Available space within each database
+dbsee_permspace.sql -- available space within each database
 
-dbsee_tablefallback_export.sql -- Tables with fallback enabled
+dbsee_tablefallback.sql -- tables with fallback enabled
 
-dbsee_tableindexstats_export.sql -- Tables with missing or out of date index stats
+dbsee_tableindexstats.sql -- tables with missing or old index statistics
 
-dbsee_tablemaxpi_export.sql -- Tables with more than 5 columns as the primary index
+dbsee_tablemaxpi.sql -- tables with 5 or more primary index (PI) columns
 
-dbsee_tablemultiset_export.sql -- Multiset tables
+dbsee_tablemultiset.sql -- multiset tables
 
-dbsee_tablenopi_export.sql -- Non Primary indexed tables
+dbsee_tablenopi.sql -- NOPI tables
 
-dbsee_tablenullablepi_export.sql -- Primary indexed tables with nullable columns
+dbsee_tablenullablepi.sql -- tables with nullable primary index (PI) columns
 
-dbsee_tablepartitions_export.sql -- Statistics for partitioned tables
+dbsee_tablepartitions.sql -- statistics for partitioned tables
 
-dbsee_tablepidatatype.sql -- Primary indexed datatypes
+dbsee_tablepidatatype.sql -- primary index (PI) datatypes
 
-dbsee_tableskew_export.sql -- Table skew for all tables
+dbsee_tableskew.sql -- skewed tables
 
-dbsee_tablestats_export.sql -- Tables with missing or out of date stats
+dbsee_tablestats.sql -- tables with missing or old statistics
 
-dbsee_tablewidth_export.sql -- Number of columns per table
+dbsee_tablewidth.sql -- number of columns per table
 
-dbsee_unused_export.sql -- Unused objects
+dbsee_unused.sql -- unused database objects
 
