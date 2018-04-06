@@ -2,8 +2,8 @@
 /* Author      : VLDB                                                */
 /* Date        : 16/03/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate CSV to report on tables with missing or    */
-/*               out of date index stats within the Teradata System  */
+/* Description : Generate report on tables with missing or           */
+/*               old index statistics                                */
 /*********************************************************************/
 select t1.databasename as database_name
       ,t1.tablename    as table_name
