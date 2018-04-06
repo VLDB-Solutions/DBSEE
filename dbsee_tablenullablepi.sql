@@ -2,20 +2,9 @@
 /* Author      : VLDB                                                */
 /* Date        : 16/03/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate CSV to report on tables with PI with       */
-/*               nullable columns within the Teradata System         */
+/* Description : Generate report for tables with nullable            */
+/*               primary index (PI) columns                          */
 /*********************************************************************/
-/* 1 - export target table to CSV                                    */
-/*********************************************************************/
-
--- export location defined by controlling shell
-
-.set recordmode off
-.set separator '|'
-.set width 2000
-.set titledashes off
-.set null as ''
-
 select  t1.databasename as database_name
        ,t1.tablename    as table_name
        ,t1.columnname   as column_name
@@ -37,8 +26,4 @@ on      t1.tablename    = t3.tablename
 and     t1.databasename = t3.databasename
 where   t1.indexnumber  = 1 -- denotes primary index
 ;
-.if errorcode <> 0 then .quit errorcode
-
-.logoff
-.exit
 
