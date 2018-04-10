@@ -40,11 +40,31 @@ There are two possible outcomes from DBSee:
 
 We have yet to find a Teradata system that doesn't fail nearly **all** of the DBSee best practice checks.
 
+The great news is that all best practice violations can be fixed relatively easily. The first step is to uncover them with DBSee.
 
+Fixing best practice violations typically delivers some or all of the following benefits:
+
+* reduced CPU demand
+* reduced IO demand
+* increase in free space
+* reduced query elapse times
+* improved best practice knowledge
+* smaller ETL batch window
+
+When taken together, best practice improvements can often extend the life of your Teradata system.
 
 ![logo](https://vldbsolutions.com/img/VLDB-DBSee-Tables.png)
 
+### Running DBSee
 
+There are a couple of ways in which DBSee can be run against a Teradata system:
+
+* run code via an sql client 
+* run with a shell script via the command line 
+
+DBSee does **not** access any data held in Teradata outside of the data dictionary (DBC). DBSee does not require any privileges apart from select access to DBC.
+
+The DBSee scripts take between a few seconds to a few minutes eahc to execute, even against a busy system. 
 
 [dbsee_permspace.sql](https://github.com/VLDB-Solutions/DBSEE/blob/master/dbsee_permspace.sql) -- available space within each database
 
@@ -72,11 +92,11 @@ We have yet to find a Teradata system that doesn't fail nearly **all** of the DB
 
 [dbsee_unused.sql](https://github.com/VLDB-Solutions/DBSEE/blob/master/dbsee_unused.sql) -- unused database objects
 
-### Contact & Support
+### Contact VLDB
 
-For answers to questions or support, we can be contacted through the channels listed below. 
+For questions or support, we can be contacted through the following channels. 
 
 * Homepage: [vldbsolutions.com](https://vldbsolutions.com/)  
 * Email: contact@vldbsolutions.com
-* Twitter: [@vldbsolutions](twitter.com/vldbsolutions)
+* Twitter: [@vldbsolutions](https://twitter.com/vldbsolutions)
 
