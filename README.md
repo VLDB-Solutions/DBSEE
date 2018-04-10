@@ -35,7 +35,9 @@ Our main area of expertise is high-end, [Massively Parallel Processing (MPP)](ht
 
 [dbsee_unused.sql](https://github.com/VLDB-Solutions/DBSEE/blob/master/dbsee_unused.sql) -- unused database objects
 
-### Links
+### Contact & Support
+
+For answers to questions or support, we can be contacted through the channels listed below. 
 
 * Homepage: [vldbsolutions.com](https://vldbsolutions.com/)  
 * Email: contact@vldbsolutions.com
