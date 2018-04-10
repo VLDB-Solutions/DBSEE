@@ -6,7 +6,44 @@
 
 Our main area of expertise is high-end, [Massively Parallel Processing (MPP)](https://vldbsolutions.com/glossary.php#mpp) database platforms, especially [Teradata](https://vldbsolutions.com/technology/teradata.php) and [Pivotal Greenplum](https://vldbsolutions.com/technology/greenplum.php). However, our project history includes business functions as diverse as [CRM](https://vldbsolutions.com/glossary.php#crm), [analytics](https://vldbsolutions.com/glossary.php#dataanalytics), customer retention, and financial planning and forecasting — as well as delivering tailored, hands-on technical [training](https://vldbsolutions.com/services/teradata-services/teradata-training.php) — for clients from the UK, Europe, and the USA.
 
+
+![logo](https://vldbsolutions.com/img/VLDB-DBSee.png)
+
 # DBSee
+
+The team at VLDB have been aquiring and modifying Teradata best practice beliefs since the dawn of time - wll 1989 onwards at least. We have literally 'been there, seen that & done that'.
+
+DBSee represents the Teradata best practice beliefs that can be checked for programmatically. DBSee consists of a set of SQL scripts developed by VLDB that run against the Teradata data dictionary. Each script looks for a separate Teradata best practice violation.
+
+### What Does DBSee Check?
+
+DBSee rules cover the following areas:
+
+* permanent space
+* data distribution
+* indexes
+* partitions
+* statistics
+* compression
+* table properties
+
+In all cases, DBSee rules look for opportunities to improve how Teradata is used to align with best practices.
+
+### DBSee Benefits
+
+The key DBSee deliverable is a set of results displayed within your native database client tool, or output as a csv file and imported into Tableau for easy-to-understand visualisations
+
+There are two possible outcomes from DBSee:
+
+* no best practice violations detected
+* evidence-based best practice violations detected
+
+We have yet to find a Teradata system that doesn't fail nearly **all** of the DBSee best practice checks.
+
+
+
+![logo](https://vldbsolutions.com/img/VLDB-DBSee-Tables.png)
+
 
 
 [dbsee_permspace.sql](https://github.com/VLDB-Solutions/DBSEE/blob/master/dbsee_permspace.sql) -- available space within each database
