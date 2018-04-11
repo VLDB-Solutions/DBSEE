@@ -8,8 +8,6 @@ Our main area of expertise is high-end, [Massively Parallel Processing (MPP)](ht
 
 ![logo](https://vldbsolutions.com/img/VLDB-DBSee.png)
 
-# DBSee
-
 The team at VLDB have been acquiring and modifying Teradata best practice beliefs since 1989.
 
 DBSee represents the Teradata best practice beliefs that can be checked for programmatically. DBSee consists of a set of SQL scripts developed by VLDB that run against the Teradata data dictionary. Each script looks for a separate Teradata best practice violation.
@@ -59,7 +57,7 @@ When taken together, best practice improvements can often extend the life of you
 There are a couple of ways in which DBSee can be run against a Teradata system:
 
 * run code via an sql client 
-* run with a shell script via the command line 
+* run as bteq via the command line 
 
 DBSee does **not** access any data held in Teradata outside of the data dictionary (DBC). DBSee does not require any privileges apart from select access to DBC.
 
