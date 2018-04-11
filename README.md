@@ -93,7 +93,7 @@ The DBSee scripts take between a few seconds to a few minutes each to execute, e
 
 ### Contact VLDB
 
-For questions or support, we can be contacted through the following channels;
+For questions or support, we can be contacted through the following channels:
 
 * Homepage: [vldbsolutions.com](https://vldbsolutions.com/)  
 * Email: contact@vldbsolutions.com
