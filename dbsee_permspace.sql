@@ -5,7 +5,7 @@
 /* Description : Generate report on available space within           */
 /*               each database                                       */
 /*********************************************************************/
-select  t1.databasename  as database_name
+select  databasename  as database_name
        ,sum(maxperm)     as perm_size
        ,sum(currentperm) as perm_used
        ,cast(sum(maxperm-currentperm) as bigint) as perm_free
