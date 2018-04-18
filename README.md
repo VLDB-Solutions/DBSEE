@@ -10,7 +10,7 @@ Our main area of expertise is high-end, [Massively Parallel Processing (MPP)](ht
 
 The team at VLDB have been acquiring and modifying Teradata best practice beliefs since 1989.
 
-DBSee represents the Teradata best practice beliefs that can be checked for programmatically. DBSee consists of a set of SQL scripts developed by VLDB that run against the Teradata data dictionary. Each script looks for a separate Teradata best practice violation.
+DBSee represents the Teradata best practice beliefs that can be checked for programmatically. DBSee consists of a set of SQL scripts developed by VLDB that run against the Teradata data dictionary. Each script can be used to inform a user of the current state of their Teradata system.
 
 ### What Does DBSee Check?
 
