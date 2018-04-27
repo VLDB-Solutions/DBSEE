@@ -2,7 +2,7 @@
 /* Author      : VLDB                                                */
 /* Date        : 08/02/2017                                          */
 /* Version     : 1                                                   */
-/* Description : Generate report for tables with fallback            */
+/* Description : Generate report on tables with fallback             */
 /*               enabled                                             */
 /*********************************************************************/
 select t1.databasename       as database_name
